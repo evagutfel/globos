@@ -25,6 +25,7 @@ class Globo
     
       fill(c);
       strokeWeight(3);
+      triangle(x,y+50,x-10,y+70,x+10,y+70);
       ellipse(x,y,50,100);
       imageMode(CENTER);
       image(cara,x,y, 60, 90);
