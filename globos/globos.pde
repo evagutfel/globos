@@ -1,3 +1,4 @@
+PImage cara;
 class Globo
 {
   color c;
@@ -21,9 +22,13 @@ class Globo
 
   void dibujate()
   {
+    
       fill(c);
       strokeWeight(3);
       ellipse(x,y,50,100);
+      imageMode(CENTER);
+      image(cara,x,y, 60, 90);
+      
   }
   
 }
@@ -35,6 +40,7 @@ void setup()
 {
   size(640,480);
   globos = new ArrayList<Globo>();  
+  cara=loadImage("carita.png");
 }
 
 void draw()
